@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel=icon href=../images/logo.png type="../image/png" height="100%" width="100%">
+		<title>MANUTD</title>
+			<link rel="stylesheet" type="text/css" href="../css/main.css">
+			<script src="javascript/../slider.js"></script>
+			<script type="text/javascript">
+
+			function validForm()
+			{
+				if (document.joining.firstName.value=="")
+				{
+					alert("first name should be filled");
+					return false;
+				};
+
+				var x;
+				x=document.joining.email.value.length;
+
+				if (x<1)
+				{
+					alert("enter your email adress");
+					return false;
+				};
+
+				display();
+			}
+
+			
+		</script>
+
+		<style type="text/css">
+
+			/*for the wrapper of the page*/
+			#wrapper1
+			{
+			height:950px;
+			width:950px;
+			margin: 0px auto;
+			position:relative;
+			background-image: url("../images/wrap.png");
+			background-repeat: no-repeat;
+			opacity: 0.6px;
+			}
+
+			/**For the Heading**/
+			h2 
+			{
+				margin-left: 20px;
+				font-size: 30px;
+				color: #da0e0e;
+				font-family: 'Francois One'. Sans-serif;
+			}
+
+		/**for the table**/
+			table 
+			{
+				margin: 20px;
+				font-family: Arial, Sans-serif;
+				font-size: 18px;
+				color: #FFFFFF;
+			}
+
+		/**for the buttons**/
+			#button 			{
+				margin-left: 600px;
+			}
+		</style>	
+	</head>
+	<body bgproperties="fixed">
+		<div id="wrapper1">
+			<br>
+			<header>
+				<a href="../pages/index.html"><img src="../images/logo.png" class="logo" onmouseover="this.src='../images/logo2.png'" onmouseout="this.src='../images/logo.png'" /></a>
+					<nav>
+						<ul class="main_menu">
+							<li><a href="../pages/index.html">HOME</a></li>
+							<li><a href="../pages/history.html">HISTORY</a></li>
+							<li><a href="../pages/play.html">PLAYERS & STAFF</a></li>				
+							<li><a href="../pages/gallery.html">GALLERY</a></li>
+							<li><a href="../pages/form.html">CONTACT US</a></li
+						</ul>
+				    </nav>
+			</header>
+	<!-- Nav end -->
+			<div id="form">
+				<h2>Join Us</h2>	
+					<form name="joining" method="post" onsubmit="return validForm()">
+			<table>
+				<tr>
+					<td>
+		<!-- for entering first Name for the Form -->				
+					<p> First Name: <input name="firstName" type="text" size="20" maxlength="20"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+		<!-- for entering middle Name for the Form -->				
+					<p> Middle Name: <input name="MiddleName" type="text" size="20" maxlength="20"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+		<!-- for entering last Name for the Form -->				
+					<p> Last Name: <input name="LastName" type="text" size="20" maxlength="20"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+		<!-- for entering Date of Birth for the Form -->			
+					<p>Date of Birth(DOB): <input name="DOB" type="date" autofocus></p>
+					</td>
+				</tr>	
+				<tr>
+				<td>
+		<!-- for entering Gender for the Form -->			
+					<p>Gender:<select name="gender" required>
+							<option>Male</option>
+							<option>Female</option>
+							</select>
+					</p>
+				</td>
+				</tr>
+				<tr>
+					<td>
+		<!-- for entering Email for the Form -->
+		<p>E-mail: <input name="email" type="email" size="40" placeholder="user_name@domain.com"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+		<!-- for entering Password for the Form -->
+					<p>Password: <input name="password" type="password" size="30" maxlength="16" required></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+		<!-- for entering Country for the Form -->	
+					<p>Country: <input name="country" type="text" size="20" maxlength="12"></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+		<!-- for entering Comment for the Form -->				
+					<p>Comments:<br><br>
+					<textarea name="comments" rows="5" cols="100" placeholder="Enter comments"></textarea>
+					</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+		<!-- Buttons to Submit and Clear the Form-->		
+					<p id="button">
+						<input type="submit" value="Submit">
+						<input type="reset" value="Clear">
+					</p>
+					</td>
+				</tr>
+			</table>
+		</form>
+		</div> 
+<!--End of Form-->	
+	   		
+			<div id="footer">
+				<div id="footer-wrap">
+					<div id="legal" align="right">
+						<p>&copy; Ajip Maharjan | 2015 &nbsp;&nbsp;</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

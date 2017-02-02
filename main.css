@@ -1,0 +1,100 @@
+body 			{
+				margin-top: 25px;
+				padding: 5px; /* The padding property can have from one to four values.*/
+				background-image: url("../images/twilight2.jpg");
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+				font-size: 13px;
+				color: #BBBBBB;
+								}
+
+
+a.hover, a.active, a:link, a:visited {
+				 color: #48ACDE
+				 }
+
+fieldset 		{
+				border: none;
+				
+				}
+
+input			{
+				font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+				font-size: 13px;
+				color: #BBBBBB;
+				}
+
+/*header of the page*/
+
+#header 		{
+				width: 860px;
+				height: 52px;
+				margin: auto;
+			}
+
+/*logo for the page*/
+
+IMG.logo {
+	width: 70px;
+	height: 70px;
+    display: block;
+	margin-left: auto;
+    margin-right: auto;
+	border-radius: 8px;
+	}
+
+/*navigation bar*/
+
+.main_menu{
+			padding: 5px 0 5px 0;
+			text-align: center;
+			line-height: 25px;
+		}
+			
+ul.main_menu{
+			margin-top: 8px
+					 
+			}			
+			
+.main_menu li{
+			display: inline;
+			padding: 0 10px 0 10px;
+			font-size: 15px;
+			border-bottom-style: solid;
+			border-color: #ffffff;
+			
+}			
+
+.main_menu a{
+			text-decoration: none;
+			color: #ffffff;
+			padding: 8px;
+			font-variant: small-caps;
+			}
+
+.main_menu a:hover{
+					color: #ee1e1e;
+}
+
+.content{
+		color: #ffffff;
+}
+		
+/*wrapper for all the pages except home and history page*/
+			#wrapper1{
+			height:1150px;
+			width:950px;
+			margin: 0px auto;
+			position:relative;
+			background-image: url("../images/wrap.png");
+			background-repeat: no-repeat;
+			opacity: 0.6px;
+			}
+		
+/*for paragraph*/
+p
+{
+	font-size: 16px;
+}
+
